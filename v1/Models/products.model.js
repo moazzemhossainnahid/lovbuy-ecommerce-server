@@ -33,10 +33,10 @@ const productSchema = mongoose.Schema(
             required: [false, "Description is not required"],
             trim: true,
         },
-        image: {
+        images: {
             required: true,
-            type: String,
-            validate: [validator.isURL, "Please provide Thumbnail Image URL"],
+            type: Array,
+            // validate: [validator.isURL, "Please provide Thumbnail Image URL"],
         },
         stock: {
             type: Number,
