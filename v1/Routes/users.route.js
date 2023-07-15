@@ -10,19 +10,19 @@ router.put("/:email", userController.postAnUser);
 router.get("/:email", userController.getAnUser);
 
 // get all Users
-router.get("/", userController.getAllUsers);
+router.get("/", verifyToken, userController.getAllUsers);
 
 // delete an User
-router.delete("/:id", userController.deleteUser);
+router.delete("/:id", verifyToken, userController.deleteUser);
 
 // get an Admin
 router.get("/isAdmin/:email", userController.getAdmin);
 
 // make an Admin
-router.put("/admin/:email", userController.makeAdmin);
+router.put("/admin/:email", verifyToken, userController.makeAdmin);
 
 // remove an Admin
-router.put("/admin/remove/:email", userController.removeAdmin);
+router.put("/admin/remove/:email", verifyToken, userController.removeAdmin);
 
 
 module.exports = router;
