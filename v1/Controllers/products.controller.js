@@ -6,7 +6,7 @@ require('dotenv').config();
 
 
 // publish a product
-exports.publishAPost = async (req, res) => {
+exports.publishAProduct = async (req, res) => {
     try {
         const product = req.body;
         // console.log(req.file);
@@ -23,20 +23,20 @@ exports.publishAPost = async (req, res) => {
 }
 
 
-// get single post
-exports.getSinglePost = async (req, res) => {
+// get single Product
+exports.getSingleProduct = async (req, res) => {
     try {
         const id = req.params.id;
         const query = { _id: id }
-        const post = await Products.findOne(query);
-        return res.status(200).json(post);
+        const product = await Products.findOne(query);
+        return res.status(200).json(product);
     } catch (err) {
         res.status(404).json(err.message);
     }
 }
 
 
-// get all posts
+// get all Products
 exports.getAllproducts = async (req, res) => {
     try {
         let filters = { ...req.query };
@@ -121,16 +121,8 @@ exports.getAllproducts = async (req, res) => {
 }
 
 
-// // get all posts
-// exports.getAllproducts = async (req, res) => {
-//     const query = {};
-//     const products = await Products.find(query);
-//     res.send(products)
-// }
-
-
-// delete a pst
-exports.deleteAPost = async (req, res) => {
+// delete a Product
+exports.deleteAProduct = async (req, res) => {
     try {
         const id = req.params.id;
         // console.log(id);
@@ -144,8 +136,8 @@ exports.deleteAPost = async (req, res) => {
 }
 
 
-// approve a post
-exports.approveAPost = async (req, res) => {
+// approve a Product
+exports.approveAProduct = async (req, res) => {
     try {
         const id = req.params.id;
         console.log(id);
