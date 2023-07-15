@@ -1,3 +1,5 @@
+const dbConnect = require("./Utilities/dbConnect");
+
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -6,6 +8,9 @@ const colors = require("colors");
 const mongoose = require('mongoose');
 require('dotenv').config();
 
+// connect db
+dbConnect();
+
 
 app.use(cors());
 app.use(express.json());
@@ -13,14 +18,11 @@ app.use(express.json());
 
 
 // import routes
-const dbConnect = require("./Utilities/dbConnect");
 const usersRoute = require('./v1/Routes/users.route');
 const productsRoute = require('./v1/Routes/products.route');
 
 
 
-// connect db
-dbConnect();
 
 
 // declare routes
