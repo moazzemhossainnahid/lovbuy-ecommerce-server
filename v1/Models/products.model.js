@@ -54,6 +54,10 @@ const productSchema = mongoose.Schema(
             type: Number,
             required: [true, "Price is required"],
         },
+        sale: {
+            type: Number,
+            required: [false, "sale is not required"],
+        },
         shipping: {
             type: Number,
             required: [false, "shipping is not required"],
