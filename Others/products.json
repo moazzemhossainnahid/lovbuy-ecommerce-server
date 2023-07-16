@@ -37,18 +37,18 @@
   },
   {
     "id": "3cfe9adc-c27f-4be4-a859-a5c98ce88a27",
-    "category": "Men's Boot",
-    "name": "TERREX AX4 MID GORE-TEX HIKING SHOES",
+    "category": "Men's T-Shirt",
+    "name": "NYC BADGE OF SPORT LOGO GRAPHIC TEE",
     "seller": "Addidas",
     "price": 111,
     "stock": 19,
     "ratings": 4,
     "ratingsCount": 894,
-    "imagess": [
-      "",
-      "",
-      "",
-      ""
+    "images": [
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/e0101e13ac1940208478add1000e953a_9366/NYC_Badge_of_Sport_Logo_Graphic_Tee_White_HE2363_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/8c3f5445517340e8bc02ad8100ffd3f6_9366/Runner_Tee_Burgundy_H25050_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9889d39ac10243a2bb0fad1a0097ef07_9366/Essentials_Colorblock_Tee_Black_H14627_21_model.jpg",
+      "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c53945c38b614702ba6fae1d0164b2f1_9366/LNY_Trefoil_Fill_Tee_Black_HR9040_21_model.jpg"
     ],
     "shipping": 27,
     "quantity": 0
