@@ -4,7 +4,7 @@ const validator = require("validator");
 
 const orderSchema = mongoose.Schema(
     {
-        userId: { type: String, required: true },
+        userId: { type: String, required: false },
         customerId: { type: String, required: true },
         paymentIntentId: { type: String, required: true },
         products: [

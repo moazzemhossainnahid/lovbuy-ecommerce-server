@@ -12,10 +12,12 @@ app.use(cors());
 app.use(express.json());
 
 
+app.use('/public', express.static('public'))
 
 // import routes
 const usersRoute = require('./v1/Routes/users.route');
 const productsRoute = require('./v1/Routes/products.route');
+const stripeRoute = require('./v1/Routes/stripe.route');
 
 
 
@@ -24,6 +26,7 @@ const productsRoute = require('./v1/Routes/products.route');
 // declare routes
 app.use('/api/v1/users', usersRoute);
 app.use('/api/v1/products', productsRoute);
+app.use('/api/v1/stripe', stripeRoute);
 
 
 
