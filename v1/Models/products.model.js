@@ -8,6 +8,10 @@ const productSchema = mongoose.Schema(
             type: String,
             unique: true,
         },
+        sku: {
+            type: String,
+            unique: true,
+        },
         name: {
             type: String,
             trim: true,
